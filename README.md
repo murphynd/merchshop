@@ -17,6 +17,11 @@
             <strong>MurphyND</strong>
         </a>
     </p>
+      <p align="center">
+        <a href="https://github.com/wdonovanseid">
+            <strong>WilliamDS</strong>
+        </a>
+    </p>
     <!-- Project Shields -->
     <p align="center">
         <a href="https://github.com/LondresRi/README-Assistance/issues">
@@ -36,7 +41,7 @@
 <p align="center">
   <small>Initiated November 17th, 2020.</small>
   <br>
-  <small>By Natalie Murphy & Forrest Reiland</small>
+  <small>By Natalie Murphy & William Donovan-Seid</small>
 </p>
 
 ------------------------------
@@ -113,29 +118,6 @@ Once again, make sure to plan your application first and include a component dia
 
 ### ⚙️ Setup and Use
 
-  #### Cloning
-
-  1) Navigate to the [LondresRi README-Assistance repository here](https://github.com/LondresRi/README-Assistance).
-  2) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
-  3) Open up your system Terminal or GitBash, navigate to your desktop with the command: `cd Desktop`, or whichever location suits you best.
-  4) Clone the repository to your desktop: `$ git clone https://github.com/LondresRi/README-Assistance.git`
-  5) Run the command `cd README-Assistance` to enter into the project directory.
-  6) View or Edit:
-      * Code Editor - Run the command `atom .` or `code .` to open the project in Atom or VisualStudio Code respectively for review and editing.
-      * Text Editor - Open by double clicking on any of the files to open in a text editor.
-
-  #### Download
-
-  1) Navigate to the [LondresRi README-Assistance repository here](https://github.com/LondresRi/README-Assistance).
-  2) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
-  3) Click 'Download ZIP' and extract the directory to whichever location suits you best.
-  4) Open by double clicking on any of the files to open in a text editor.
-
-  #### Usage
-  **Use Responsibly**
-  1) Don't simply copy and paste.
-  2) Breakdown into components to understand them.
-  3) Utilize to create your own template that reflects your needs and style.
 
 ------------------------------
 
@@ -143,7 +125,7 @@ Once again, make sure to plan your application first and include a component dia
 
 | Author | GitHub | Email |
 |--------|:------:|:-----:|
-| [Forrest Reiland](https://linkedin.com/in/freiland) | [freiland](https://github.com/freiland) |  [freiland@email.arizona.edu](mailto:freiland@email.arizona.edu) |
+| [William Donovan-Seid](https://linkedin.com/in/wdonovanseid) | [wdonovanseid](https://github.com/wdonovanseid) |  [durahand40@gmail.com](mailto:durahand40@gmail.com) |
 | [Natalie Murphy](https://linkedin.com/in/murphynd) | [Murphynd](https://github.com/Murphynd) |  [NatalieMurphy500@gmail.com](mailto:nataliemurphy500@gmail.com) |
 
 ------------------------------
@@ -159,7 +141,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 ```
 MIT License
 
-Copyright (c) 2020 Shawn Lunsford.
+Copyright (c) 2020 Natalie Murphy and William Donovan-Seid.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -186,15 +168,6 @@ SOFTWARE.
 
 #### [Epicodus](https://www.epicodus.com/)
 >"A school for tech careers... to help people learn the skills they need to get great jobs."
-
-#### [The Internet](https://webfoundation.org/)
-> "...the first thing that humanity has built that humanity doesn't understand..."
-> - Eric Schmidt, Google (Alphabet Inc.)
-
-#### [Shawn](https://github.com/LondresRi)
-> "You're so cool right now."
-> - That one person, that one time
-
 
 ------------------------------
 
