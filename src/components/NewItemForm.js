@@ -13,7 +13,7 @@ function NewItemForm(props) {
   );
   function handleNewItemFormSubmission(event) {
     event.preventDefault();
-    props.onNewItemCreation({ name: event.target.name.value, quantity: event.target.quantity.value, description: event.target.description.value, id: v4() });
+    props.onNewItemCreation({ name: event.target.name.value, quantity: parseInt(event.target.quantity.value), description: event.target.description.value, id: v4() });
   }
 }
 

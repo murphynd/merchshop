@@ -67,6 +67,19 @@ class StoreControl extends React.Component {
     });
   }
 
+  handleBuyClick = (id) => {
+    const selectedItem = this.state.masterItemList.filter(item => item.id === id)[0];
+    selectedItem.quantity -= 1;
+    this.setState({});
+  }
+
+  handleRestockClick = (id) => {
+    const selectedItem = this.state.masterItemList.filter(item => item.id === id)[0];
+    selectedItem.quantity += 1;
+    this.setState({});
+  }
+
+
   render() {
     let currentlyVisibleState = null;
     let buttonText = null;
@@ -81,7 +94,9 @@ class StoreControl extends React.Component {
         <ItemDetail
           item={this.state.selectedItem}
           onClickingDelete={this.handleDeletingItem}
-          onClickingEdit={this.handleEditClick} />
+          onClickingEdit={this.handleEditClick}
+          onClickingBuy={this.handleBuyClick}
+          onClickingRestock={this.handleRestockClick} />
       buttonText = "Return to Item List";
     } else if (this.state.visible) {
       currentlyVisibleState =

@@ -5,7 +5,7 @@ function Item(props) {
   return (
     <React.Fragment>
       <div onClick={() => props.whenItemClicked(props.id)}>
-        <h3>{props.name} - Stock: {props.quantity}</h3>
+        <h3>{props.name} - Stock: {props.quantity > 0 ? props.quantity : 'Out of Stock'}</h3>
         <hr />
       </div>
     </React.Fragment>

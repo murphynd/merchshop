@@ -12,7 +12,8 @@ function ReusableForm(props) {
         <input
           type='number'
           name='quantity'
-          placeholder='0' />
+          placeholder='0'
+          min="0" />
         <textarea
           name='description'
           placeholder='Description' />
