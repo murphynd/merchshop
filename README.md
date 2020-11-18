@@ -1,70 +1,201 @@
-# Getting Started with Create React App
+<br>
+<p align="center">
+  <u><big>||&emsp;<b><u>Merch Site in React</u></b>&emsp;||</big></u>
+</p>
+<p align="center">
+    <!-- Project Avatar/Logo -->
+    <br>
+    <a href="https://github.com/Murphynd">
+        <img style="border-radius: 100%" src="https://www.netclipart.com/pp/m/92-924206_basket-clipart-plastic-icon-png-shopping-baskets.png">
+    </a>
+    <p align="center">
+      ___________________________
+    </p>
+    <!-- GitHub Link -->
+    <p align="center">
+        <a href="https://github.com/murphynd">
+            <strong>MurphyND</strong>
+        </a>
+    </p>
+    <!-- Project Shields -->
+    <p align="center">
+        <a href="https://github.com/LondresRi/README-Assistance/issues">
+            <img src="https://img.shields.io/github/issues/LondresRi/README-Assistance?style=plastic">
+        </a>
+        ¨
+        <a href="https://github.com/LondresRi/Best-ReadMe-Template/blob/master/LICENSE.txt">
+            <img src="https://img.shields.io/github/license/LondresRi/README-Assistance?color=orange&style=plastic">
+        </a>
+        ¨
+        <a href="https://linkedin.com/in/nataliedoraismurphy">
+            <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=plastic&logo=linkedin&colorB=2867B2">
+        </a>
+    </p>    
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <small>Initiated November 17th, 2020.</small>
+  <br>
+  <small>By Natalie Murphy & Forrest Reiland</small>
+</p>
 
-## Available Scripts
+------------------------------
+### <u>Table of Contents</u>
+* <a href="#🌐-about-the-project">About the Project</a>
+    * <a href="#📖-description">Description</a>
+    * <a href="#🦠-known-bugs">Known Bugs</a>
+    * <a href="#🛠-built-with">Built With</a>
+* <a href="#🏁-getting-started">Getting Started</a>
+    * <a href="#📋-prerequisites">Prerequisites</a>
+    * <a href="#⚙️-setup-and-use">Setup and Use</a>
+* <a href="#🤝-contributors">Auxiliary</a>
+    * <a href="#🤝-contributors">Contributors</a>
+    * <a href="#✉️-contact-and-support">Contact</a>
+    * <a href="#⚖️-license">License</a>
+    * <a href="#🌟-acknowledgements">Acknowledgements</a>
+    
+------------------------------
 
-In the project directory, you can run:
+## 🌐 About the Project
 
-### `npm start`
+### 📖 Description
+&emsp;Merch Site
+Build a website for selling merchandise for a band, author, sports team, or any other purveyor that interests you.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A user should be able to do the following:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Create, Read, Update and Delete items in the store. 
+- Items should have fields for name, description, and quantity (along with any other fields you wish to add).
+- Increase or decrease the quantity of an item in the store. 
+- For instance, if a user clicks "Buy", the quantity will decrease by one. 
 
-### `npm test`
+- If a user clicks "Restock", it will increment by a specified number.
+- When the quantity of an item is reduced to 0, the item should say "Out of Stock". 
+- A user should not be able to reduce the quantity of an item below 0.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Further Exploration
+- Create a Cart component. 
+- When a user clicks "Buy", the specified item should be added to the cart.
+ - A user should be able to view and remove items from the cart.
+- Create a widget that shows the number of items in the cart. 
+- This widget should be updated when items are added to the cart.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once again, make sure to plan your application first and include a component diagram in your README.
+<img src="https://github.com/murphynd/FarmersMarket/blob/master/Untitled%20Diagram.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🦠 Known Bugs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* None known yet. <a href="https://github.com/LondresRi/README-Assistance/issues">Please report if you discover any.</a>
 
-### `npm run eject`
+### 🛠 Built With
+* [React](https://reactjs.org/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [HTML5](https://html.com/html5/)
+* [Markdown](https://daringfireball.net/projects/markdown/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+------------------------------
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🏁 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 📋 Prerequisites
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Interactive Development Environment
 
-## Learn More
+  &emsp;To view or edit the document which may include some HTML code, you will need an code editor or text editor. The popular open-source choices for an code editor are Atom and VisualStudio Code.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  1) Code Editor Download:
+     * Option 1: [Atom](https://nodejs.org/en/)
+     * Option 2: [VisualStudio Code](https://www.npmjs.com/)
+  2) Click the download most applicable to your OS and system.
+  3) Wait for download to complete, then install -- Windows will run the setup exe and macOS will drag and drop into applications.
+  4) Optionally, create a [GitHub Account](https://github.com)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### ⚙️ Setup and Use
 
-### Code Splitting
+  #### Cloning
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  1) Navigate to the [LondresRi README-Assistance repository here](https://github.com/LondresRi/README-Assistance).
+  2) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
+  3) Open up your system Terminal or GitBash, navigate to your desktop with the command: `cd Desktop`, or whichever location suits you best.
+  4) Clone the repository to your desktop: `$ git clone https://github.com/LondresRi/README-Assistance.git`
+  5) Run the command `cd README-Assistance` to enter into the project directory.
+  6) View or Edit:
+      * Code Editor - Run the command `atom .` or `code .` to open the project in Atom or VisualStudio Code respectively for review and editing.
+      * Text Editor - Open by double clicking on any of the files to open in a text editor.
 
-### Analyzing the Bundle Size
+  #### Download
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  1) Navigate to the [LondresRi README-Assistance repository here](https://github.com/LondresRi/README-Assistance).
+  2) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
+  3) Click 'Download ZIP' and extract the directory to whichever location suits you best.
+  4) Open by double clicking on any of the files to open in a text editor.
 
-### Making a Progressive Web App
+  #### Usage
+  **Use Responsibly**
+  1) Don't simply copy and paste.
+  2) Breakdown into components to understand them.
+  3) Utilize to create your own template that reflects your needs and style.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+------------------------------
 
-### Advanced Configuration
+### 🤝 Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+| Author | GitHub | Email |
+|--------|:------:|:-----:|
+| [Forrest Reiland](https://linkedin.com/in/freiland) | [freiland](https://github.com/freiland) |  [freiland@email.arizona.edu](mailto:freiland@email.arizona.edu) |
+| [Natalie Murphy](https://linkedin.com/in/murphynd) | [Murphynd](https://github.com/Murphynd) |  [NatalieMurphy500@gmail.com](mailto:nataliemurphy500@gmail.com) |
 
-### Deployment
+------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### ✉️ Contact and Support
 
-### `npm run build` fails to minify
+If you have any feedback or concerns, please contact one of the contributors.
+------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### ⚖️ License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Copyright (C) 2020 Shawn Lunsford. All Rights Reserved.
+```
+MIT License
+
+Copyright (c) 2020 Shawn Lunsford.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+------------------------------
+
+### 🌟 Acknowledgments
+
+#### [Epicodus](https://www.epicodus.com/)
+>"A school for tech careers... to help people learn the skills they need to get great jobs."
+
+#### [The Internet](https://webfoundation.org/)
+> "...the first thing that humanity has built that humanity doesn't understand..."
+> - Eric Schmidt, Google (Alphabet Inc.)
+
+#### [Shawn](https://github.com/LondresRi)
+> "You're so cool right now."
+> - That one person, that one time
+
+
+------------------------------
+
+<center><a href="#">Return to Top</a></center>
