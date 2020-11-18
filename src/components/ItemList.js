@@ -6,11 +6,14 @@ function ItemList(props) {
   return (
     <React.Fragment>
       <hr />
-      {props.ItemList.map((item, index) =>
-        <Item names={item.names}
-          location={item.location}
-          issue={item.issue}
-          key={index} />
+      {props.itemList.map((item) =>
+        <Item
+          whenItemClicked={props.onItemSelection}
+          name={item.name}
+          description={item.description}
+          quantity={item.quantity}
+          id={item.id}
+          key={item.id} />
       )}
     </React.Fragment>
   );
