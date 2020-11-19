@@ -76,7 +76,7 @@ class StoreControl extends React.Component {
     copyStoreItem.quantity = 1;
     const newCartList = this.state.cartList.concat(copyStoreItem);
     const temp = [];
-    newCartList.map((item) => {
+    newCartList.forEach((item) => {
       if (temp.some(x => x.id === item.id)) {
         const sameItem = temp.find(x => x.id === item.id)
         sameItem.quantity += 1;
@@ -150,11 +150,15 @@ class StoreControl extends React.Component {
     }
     return (
       <React.Fragment>
-        {currentlyVisibleState}
-        <button type="button" class="btn btn-outline-success" onClick={this.handleClick}>{buttonText}</button>
-        <CartList
-          itemList={this.state.cartList}
-          onClickingCancelOrder={this.handleCancelOrderClick} />
+        <div className="leftcolumn">
+          {currentlyVisibleState}
+          <button type="button" className="btn btn-outline-success" onClick={this.handleClick}>{buttonText}</button>
+        </div>
+        <div className="rightcolumn">
+          <CartList
+            itemList={this.state.cartList}
+            onClickingCancelOrder={this.handleCancelOrderClick} />
+        </div>
       </React.Fragment>
     );
   }

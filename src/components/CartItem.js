@@ -5,7 +5,7 @@ function CartItem(props) {
   return (
     <React.Fragment>
       <h4>{props.name} - x{props.quantity}
-        <button onClick={() => props.whenCancelClicked(props.id)}>Cancel Order</button></h4>
+        <button type="button" className="btn btn-info" onClick={() => props.whenCancelClicked(props.id)}>Cancel Order</button></h4>
       <hr />
     </React.Fragment>
   );

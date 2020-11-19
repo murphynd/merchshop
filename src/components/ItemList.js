@@ -18,7 +18,6 @@ function ItemList(props) {
             key={item.id} />
         )}
       </div>
-
     </React.Fragment>
   );
 }
