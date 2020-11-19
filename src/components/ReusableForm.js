@@ -4,21 +4,29 @@ import PropTypes from "prop-types";
 function ReusableForm(props) {
   return (
     <React.Fragment>
-      <form onSubmit={props.formSubmissionHandler}>
-        <input
-          type='text'
-          name='name'
-          placeholder='Item Name' />
-        <input
-          type='number'
-          name='quantity'
-          defaultValue="0"
-          min="0" />
-        <textarea
-          name='description'
-          placeholder='Description' />
-        <button type='submit'>{props.buttonText}</button>
-      </form>
+      <div className="card">
+        <form onSubmit={props.formSubmissionHandler}>
+          <div className="form-group">
+            <input
+              type='text'
+              name='name'
+              placeholder='Item Name' />
+          </div>
+          <div class="form-group">
+            <input
+              type='number'
+              name='quantity'
+              defaultValue="0"
+              min="0" />
+          </div>
+          <div class="form-group">
+            <textarea
+              name='description'
+              placeholder='Description' />
+          </div>
+          <button type="button" className="btn btn-primary" type='submit'>{props.buttonText}</button>
+        </form>
+      </div>
     </React.Fragment>
   );
 }

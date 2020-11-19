@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function CartItem(props) {
   return (
     <React.Fragment>
-      <h4>{props.name} - x{props.quantity > 0 ? props.quantity : 'Out of Stock'}
+      <h4>{props.name} - x{props.quantity}
         <button onClick={() => props.whenCancelClicked(props.id)}>Cancel Order</button></h4>
       <hr />
     </React.Fragment>

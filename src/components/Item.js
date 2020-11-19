@@ -8,7 +8,7 @@ function Item(props) {
         <h3>{props.name} - Stock: {props.quantity > 0 ? props.quantity : 'Out of Stock'}</h3>
         <hr />
       </div>
-    </React.Fragment>
+    </React.Fragment >
   );
 }
 

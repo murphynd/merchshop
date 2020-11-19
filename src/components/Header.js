@@ -2,7 +2,9 @@ import React from "react";
 
 function Header() {
   return (
-    <h2>Super Awesome Store for buying things!</h2>
+    <div className="header">
+      <h2>Super Awesome Store for buying things!</h2>
+    </div>
   );
 }
 

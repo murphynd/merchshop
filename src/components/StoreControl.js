@@ -72,9 +72,20 @@ class StoreControl extends React.Component {
   handleBuyClick = (id) => {
     const selectedItem = this.state.masterItemList.filter(item => item.id === id)[0];
     selectedItem.quantity -= 1;
-    const newCartList = this.state.cartList.concat(selectedItem);
+    const copyStoreItem = { ...selectedItem };
+    copyStoreItem.quantity = 1;
+    const newCartList = this.state.cartList.concat(copyStoreItem);
+    const temp = [];
+    newCartList.map((item) => {
+      if (temp.some(x => x.id === item.id)) {
+        const sameItem = temp.find(x => x.id === item.id)
+        sameItem.quantity += 1;
+      } else {
+        temp.push(item);
+      }
+    })
     this.setState({
-      cartList: newCartList
+      cartList: temp
     });
   }
 
@@ -87,18 +98,24 @@ class StoreControl extends React.Component {
   handleCancelOrderClick = (id) => {
     const selectedItem = this.state.masterItemList.filter(item => item.id === id)[0];
     selectedItem.quantity += 1;
-    const index = this.state.cartList.findIndex(x => x.id === id);
-    const copyCart = [...this.state.cartList];
-    let newCartList;
-    if (this.state.cartList.length > 1) {
-      copyCart.splice(index, 1);
-      newCartList = copyCart;
+    let checkItemQuan = this.state.cartList.filter(item => item.id === id)[0];
+    if (checkItemQuan.quantity > 1) {
+      checkItemQuan.quantity -= 1;
     } else {
-      newCartList = [];
+      let newCartList;
+      if (this.state.cartList.length > 1) {
+        const index = this.state.cartList.findIndex(x => x.id === id);
+        const copyCart = [...this.state.cartList];
+        copyCart.splice(index, 1);
+        newCartList = copyCart;
+      } else {
+        newCartList = [];
+      }
+      this.setState({
+        cartList: newCartList
+      });
     }
-    this.setState({
-      cartList: newCartList
-    });
+    this.setState({});
   }
 
   render() {
@@ -134,7 +151,7 @@ class StoreControl extends React.Component {
     return (
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <button type="button" class="btn btn-outline-success" onClick={this.handleClick}>{buttonText}</button>
         <CartList
           itemList={this.state.cartList}
           onClickingCancelOrder={this.handleCancelOrderClick} />

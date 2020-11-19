@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import StoreControl from "./StoreControl";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -12,9 +13,3 @@ function App() {
 }
 
 export default App;
-
-//TOMORROW
-// figure out unique id for items added to cart - thought on filter if when items are created they have unique id. 
-// change widget to show number vs listing the bananas 
-// styling 
-
