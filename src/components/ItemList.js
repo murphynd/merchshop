@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 function ItemList(props) {
   return (
     <React.Fragment>
+      <h1>Items for sale</h1>
       <hr />
       {props.itemList.map((item) =>
         <Item

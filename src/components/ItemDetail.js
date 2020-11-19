@@ -11,7 +11,7 @@ function ItemDetail(props) {
       <p><em>{item.description}</em></p>
       <button onClick={props.onClickingEdit}>Update Item</button>
       <button onClick={() => onClickingDelete(item.id)}>Close Item</button>
-      {item.quantity > 0 && // this is and if statement in JSX
+      {item.quantity > 0 && // this is an if statement in JSX
         <button onClick={() => onClickingBuy(item.id)}>Buy an Item</button>
       }
       <button onClick={() => onClickingRestock(item.id)}>Restock Item</button>

@@ -3,6 +3,7 @@ import NewItemForm from './NewItemForm';
 import ItemList from './ItemList';
 import ItemDetail from './ItemDetail';
 import EditItemForm from './EditItemForm';
+import CartList from './CartList';
 
 class StoreControl extends React.Component {
 
@@ -12,7 +13,8 @@ class StoreControl extends React.Component {
       visible: false,
       masterItemList: [],
       selectedItem: null,
-      editing: false
+      editing: false,
+      cartList: []
     }
     this.handleClick = this.handleClick.bind(this);
   }
@@ -70,13 +72,29 @@ class StoreControl extends React.Component {
   handleBuyClick = (id) => {
     const selectedItem = this.state.masterItemList.filter(item => item.id === id)[0];
     selectedItem.quantity -= 1;
-    this.setState({});
+    const newCartList = this.state.cartList.concat(selectedItem);
+    this.setState({
+      cartList: newCartList
+    });
   }
 
   handleRestockClick = (id) => {
     const selectedItem = this.state.masterItemList.filter(item => item.id === id)[0];
     selectedItem.quantity += 1;
     this.setState({});
+  }
+
+  handleCancelOrderClick = (id) => {
+    const selectedItem = this.state.masterItemList.filter(item => item.id === id)[0];
+    selectedItem.quantity += 1;
+    console.log(selectedItem.name)
+    console.log(this.cartList)
+    const index = this.cartList.findIndex(x => x.name === selectedItem.name);
+    console.log(index)
+    const newCartList = this.state.cartList.slice(0, index);
+    this.setState({
+      cartList: newCartList
+    });
   }
 
 
@@ -114,6 +132,9 @@ class StoreControl extends React.Component {
       <React.Fragment>
         {currentlyVisibleState}
         <button onClick={this.handleClick}>{buttonText}</button>
+        <CartList
+          itemList={this.state.cartList}
+          onClickingCancelOrder={this.handleCancelOrderClick} />
       </React.Fragment>
     );
   }

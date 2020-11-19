@@ -13,9 +13,9 @@ function Item(props) {
 }
 
 Item.propTypes = {
-  names: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  quantity: PropTypes.string,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  quantity: PropTypes.number,
   id: PropTypes.string,
   whenItemClicked: PropTypes.func
 };
