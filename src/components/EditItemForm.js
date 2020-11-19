@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
 
 function EditItemForm(props) {
-  const { item } = props;
   function handleEditItemFormSubmission(event) {
     event.preventDefault();
     props.onEditItem({ name: event.target.name.value, quantity: parseInt(event.target.quantity.value), description: event.target.description.value })

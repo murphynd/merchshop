@@ -87,16 +87,19 @@ class StoreControl extends React.Component {
   handleCancelOrderClick = (id) => {
     const selectedItem = this.state.masterItemList.filter(item => item.id === id)[0];
     selectedItem.quantity += 1;
-    console.log(selectedItem.name)
-    console.log(this.cartList)
-    const index = this.cartList.findIndex(x => x.name === selectedItem.name);
-    console.log(index)
-    const newCartList = this.state.cartList.slice(0, index);
+    const index = this.state.cartList.findIndex(x => x.id === id);
+    const copyCart = [...this.state.cartList];
+    let newCartList;
+    if (this.state.cartList.length > 1) {
+      copyCart.splice(index, 1);
+      newCartList = copyCart;
+    } else {
+      newCartList = [];
+    }
     this.setState({
       cartList: newCartList
     });
   }
-
 
   render() {
     let currentlyVisibleState = null;
