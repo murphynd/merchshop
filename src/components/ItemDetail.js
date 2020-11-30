@@ -6,7 +6,7 @@ function ItemDetail(props) {
 
   return (
     <React.Fragment>
-      <h1>Item Details</h1>
+      <h3>Item Details</h3>
       <h3>{item.name} - Stock: {item.quantity > 0 ? item.quantity : 'Out of Stock'}</h3>
       <p><em>{item.description}</em></p>
       <button type="button" className="btn btn-info" onClick={props.onClickingEdit}>Update Item</button>
