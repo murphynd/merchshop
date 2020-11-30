@@ -7,7 +7,7 @@ import CartList from "./CartList";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 
-//hey hey
+//hey hey hello
 
 class StoreControl extends React.Component {
   constructor(props) {
